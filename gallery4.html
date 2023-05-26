@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Tutorial (Home and Batch Tutions)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hero">
+<nav>
+    <img src="images/menu.png" class="menu-img">
+    <img src="images/logo.png" class="logo">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Photos</a></li>     
+    </ul>
+</nav>
+<div class="full-img" id="FullImgBox">
+    <img src="gallery/1.png" id="FullImg">
+    <span onclick="closeFullImg()">X</span>    
+</div>
+<div class="image-gallery">
+    <img src="gallery/26.png" onclick="openFullImg(this.src)">
+    <img src="gallery/27.png" onclick="openFullImg(this.src)">
+    <img src="gallery/28.png" onclick="openFullImg(this.src)">
+    <img src="gallery/29.png" onclick="openFullImg(this.src)">
+    <img src="gallery/30.png" onclick="openFullImg(this.src)">
+    <img src="gallery/31.png" onclick="openFullImg(this.src)">
+    <img src="gallery/32.png" onclick="openFullImg(this.src)">
+    <img src="gallery/33.png" onclick="openFullImg(this.src)">
+    <div class="next">
+    <a href="gallery.html">previous page</a>
+</div>
+</div>
+
+
+
+
+</div>
+<script>
+
+
+var FullImgBox = document.getElementById("FullImgBox");
+var FullImg = document.getElementById("FullImg");
+
+function openFullImg(pic){
+    FullImgBox.style.display = "flex";
+    FullImg.src = pic;
+}
+function closeFullImg(){
+    FullImgBox.style.display = "none";
+}
+
+</script>
+</body>
+</html>
